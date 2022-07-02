@@ -8,45 +8,18 @@ function NavBar() {
     return (
         <>
             <Navbar bg="light" expand="lg" >
-            <Navbar.Brand style={{margin: "5px 0 0 20px"}} href="#home">
-                <img src="./.img/logo192.png" alt="bob"/> 
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto"></Nav>
-                <Nav>
-                    <Nav.Link href="#LogIn">Log In</Nav.Link>
-                    <Button variant="success">Sign Up</Button>{' '}
-                </Nav>
-            </Navbar.Collapse>
+                <Navbar.Brand style={{margin: "5px 0 0 20px"}} href="#home"><img src="https://d2guulkeunn7d8.cloudfront.net/assets/beetstrap/brand/instacart-logo-color-4db9d81ca0b7638befdc4bd331f64a2633df790c0b55ef627c99b1ba77af72b7.svg" /> </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto"> 
+                    </Nav>
+                    <Nav style={{padding: "24px 40px 20px 40px", fontSize: "18px", lineHeight: "26px", fontWeight: "bolder", display: "flex" }} >
+                        <Nav.Link style={{color: "#343538"}} href="#LogIn">Log In</Nav.Link>
+                        <Button variant="success" style={{fontSize: "20px"}}>Sign Up</Button>{' '}
+                    </Nav>
+                </Navbar.Collapse>
             </Navbar>
-
         </>
-
-
-        // <>
-        //     <Navbar bg="light" expand="lg">            
-        //         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        //         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        //         <Navbar.Collapse id="basic-navbar-nav">
-        //             <Nav className="me-auto">
-        //                 <Nav.Link href="#home">Home</Nav.Link>
-        //                 <Nav.Link href="#link">Link</Nav.Link>
-        //                 <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        //                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        //                 <NavDropdown.Item href="#action/3.2">
-        //                     Another action
-        //                 </NavDropdown.Item>
-        //                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        //                 <NavDropdown.Divider />
-        //                 <NavDropdown.Item href="#action/3.4">
-        //                     Separated link
-        //                 </NavDropdown.Item>
-        //                 </NavDropdown>
-        //             </Nav>
-        //         </Navbar.Collapse>          
-        //     </Navbar>
-        // </>
     )
 }
 export default NavBar
